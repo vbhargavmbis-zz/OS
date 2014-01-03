@@ -87,26 +87,6 @@ void calculate_statistics()
 //	if(leaveS == num)
 	
 	{
-		// struct timeval t2,tot_emul_time;
-		// double g=0.0;
-		//completed = tot_pkt - dropped_pkt;
-		//completed = leaveS;
-		// if(emul_time_end==0)
-		// {
-			// gettimeofday(&t2,NULL);
-			// tot_emul_time.tv_sec = t2.tv_sec - emul_start.tv_sec;
-			// tot_emul_time.tv_usec= t2.tv_usec - emul_start.tv_usec;	
-			// g = ((tot_emul_time.tv_sec*1000000) + (tot_emul_time.tv_usec));
-			// emul_time_end = g/1000;
-		// }
-		// printf("tot pkt time in Q1 = %.3fms\n",avg_pkt_q1);
-		// printf("tot pkt time in Q2 = %.3fms\n",avg_pkt_q2);
-		// printf("tot pkt time in S = %.3fms\n",avg_pkt_s);
-		// printf("tot number of packets = %.0f\n",tot_pkt);
-		// printf("no of completed packets = %d\n",completed);
-		// printf("tot number of tokens = %.3f\n",tot_tok);
-		// printf("toks dropped = %.3f\n",dropped_tok);
-		// printf("squares added value = %.6g\n",xsq);
 		
 		printf("\nStatistics:\n\n");
 		
@@ -181,43 +161,7 @@ void calculate_statistics()
 			printf("\tpacket drop probability = %.6g\n",pkt_drop_prob);
 		}
 		exit(0);
-		// double EX=0.0;
-		// printf("tot pkt time in Q1 = %.3fms\n",avg_pkt_q1);
-		// printf("tot pkt time in Q2 = %.3fms\n",avg_pkt_q2);
-		// printf("tot pkt time in S = %.3fms\n",avg_pkt_s);
-		// printf("tot number of packets = %.0f\n",tot_pkt);
-		
-		
-		// //std_deviation = ((avg_pkt_sys * avg_pkt_sys)/NUM);//  sqr(E[X] x 8) in milliseconds
-		// //printf("std dev : %.6g\n",std_deviation);
-		// avg_pkt_inter = (avg_pkt_inter/num)/1000000;
-		// avg_pkt_service = (avg_pkt_s/num)/1000;
-		// avg_pkt_q1 = (avg_pkt_q1/emul);
-		// avg_pkt_q2 = (avg_pkt_q2/emul);
-		// avg_pkt_s = (avg_pkt_s/emul);
-		// avg_pkt_sys = (avg_pkt_sys/num)/1000;//avg time pkt spends in system
-		// EX = avg_pkt_sys;
-		// std_deviation = ((((EX * num)*(EX * num))/num) - (EX * EX));
-		// std_deviation = sqrt(std_deviation);
-		// //std_deviation = std_deviation - ((avg_pkt_sys * avg_pkt_sys)*1000);//because 1000 is being squared
-		// //printf("2nd part: %.6g\n",(avg_pkt_sys * avg_pkt_sys));
-		// tok_drop_prob = dropped_tok/tot_tok;
-		// pkt_drop_prob = dropped_pkt/tot_pkt;
-		
-		// printf("\nStatistics:\n\n");
-		
-		// printf("\taverage packet inter-arrival time = %.6gs\n",avg_pkt_inter);
-		// printf("\taverage packet service time = %.6gs\n\n",avg_pkt_service);
-		
-		// printf("\taverage number of packets in Q1 = %.6g\n",avg_pkt_q1);
-		// printf("\taverage number of packets in Q2 = %.6g\n",avg_pkt_q2);
-		// printf("\taverage number of packets at S = %.6g\n\n",avg_pkt_s);
-		
-		// printf("\taverage time a packet spent in system = %.6gs\n",avg_pkt_sys);
-		// printf("\tstandard deviation for time spent in system = %.6gs\n\n",std_deviation);
-		
-		// printf("\ttoken drop probability = %.6g\n",tok_drop_prob);
-		// printf("\tpacket drop probability = %.6g\n",pkt_drop_prob);
+	
 	}
 	//else
 	{
