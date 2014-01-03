@@ -2,7 +2,7 @@
 Readme File for Warmup1
 ========================
 Bhargav Venkataraman
-USC ID:6658312887
+
 
 Steps to compile:
 (Once all files have been extracted and placed in one folder)
